@@ -16,10 +16,44 @@
     margin: auto;
     font-size: 30px;
     text-align: center;}
+
+    /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color:#CCFFFF;
+  padding: 20px;
+}
         
   </style>
   <head>
-    <title>Hello!</title>
+    <title>Contact</title>
   </head>
   <body>
 
@@ -34,8 +68,26 @@
       <a href="about.html">About</a>
    </div>
     
-    <p>This page is currently under construction but this is where my contact info will be. Thank you for your patience. </p>
-    <img src="racoons and other/underconracoon.jpg" style="width:300px" />
-    <p> (You can barely make out the text over the sounds of construction...)</p>
+   <h1>Contact me for Commissions!</h1>
+   <p>My rate is $17/hour. We can work out how long your project will take and if I can do it.</p>
+
+   <p>(this doesn't actually work yet but this is a place holder for the moment. Thank you for your patience)</p>
+   <div class="container">
+    <form action="action_page.php">
+  
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name..">
+  
+      <label for="email">Last Name</label>
+      <input type="text" id="email" name="email" placeholder="Your email..">
+  
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
   </body>
 </html>
